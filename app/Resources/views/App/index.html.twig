@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<h2 class="page-header">Popis autora</h2>
+<table class="table table-striped">
+ <thead> 
+ <tr>  
+ 
+ <th>AUTORI</th> 
+
+
+ <th></th>
+
+  </tr> 
+ </thead> 
+
+<tbody> 
+
+
+ 
+ {% for komentari in autori %}
+
+ <tr> 
+
+ <td>
+ 
+ <ol><a href="/app/view/{{komentari.autor}}">{{komentari.autor}}</a></ol>
+
+ </td> 
+ 
+ </tr>
+ {% endfor %}
+     
+</tbody>
+
+
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+
+{% for key in autori %}
+ <tr> 
+
+ <td>
+  <ol>{{key.komentar }}</ol>
+
+ </td> 
+ 
+ </tr>
+ {% endfor %}
+
+<div class="navigation">
+    {{ knp_pagination_render(autori) }}
+</div>
+
+{% endblock %}
+
